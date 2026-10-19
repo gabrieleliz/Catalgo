@@ -9,6 +9,15 @@
 
         <nav class="main-nav">
         <h2>Tienda en linea</h2>
-        <button onclick="mostrarSeccion('vista-publico')">Casa</button>
-        <button onclick="mostrarSeccion('vista-login')">Ropa</button>
+        <button onclick="mostrarSeccion('vista-publico')">Ropa</button>
+        <button onclick="mostrarSeccion('vista-login')">Añadir Ropa</button>
     </nav>
+
+    <div class="container">
+        <!-- SECCIÓN 1: GALERÍA PÚBLICA -->
+        <section id="vista-publico">
+            <h2>Ropa Disponible</h2>
+            <div id="contenedor-propiedades" class="grid-propiedades">
+                <!-- Las casas aprobadas aparecen aquí -->
+            </div>
+        </section>
