@@ -22,6 +22,34 @@
             <div id="contenedor-propiedades" class="grid-propiedades">
                 <!-- Las casas aprobadas aparecen aquí -->
             </div>
+        </section>
+        
+        <!-- SECCIÓN 2: ACCESO (Login y Registro) -->
+        <section id="vista-login" class="hidden">
+            <h2>Ingreso al Sistema</h2>
+            <select id="rol-seleccionado" onchange="verificarRol()">
+                <option value="usuario">Soy Usuario / Propietario</option>
+                <option value="admin">Soy Administrador</option>
+            </select>
+            
+            <div id="campo-codigo-admin" class="hidden">
+                <input type="password" id="codigo-admin" placeholder="Código de Autorización">
+            </div>
+
+            <form id="form-auth">
+                <input type="text" id="nombre" placeholder="Nombre de usuario" required>
+                <input type="password" id="pass" placeholder="Contraseña" required>
+                
+                <!-- Modificación: Ahora es un enlace a la foto de identificación -->
+                <div id="registro-extra">
+                    <label>Enlace a Foto de Identificación (INE):</label>
+                    <input type="url" id="identificacion-url" placeholder="https://enlace-a-tu-foto.com">
+                </div>
+                
+                <button type="submit">Entrar al Panel</button>
+            </form>
+        </section>
+    
 
         </body>
         </html>
